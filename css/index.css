@@ -1,0 +1,38 @@
+/* Custom styles */
+.hero-section {
+    background: url('../assets/IMG_5036.JPG') center center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.gallery img {
+    height: 150px;
+    margin-bottom: 15px; /* Extra vertical spacing if needed */
+    object-fit: cover;
+}
+
+.gallery .col {
+    margin-bottom: 15px;
+}
+
+
+
+

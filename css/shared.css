@@ -1,0 +1,32 @@
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    background-color: #0D5C85; /* Blue color for hover */
+    color: white;             /* White text on hover */
+    border-radius: 5px;       /* Rounded edges for a smoother look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Active Link Styling (Optional) */
+.navbar-nav .nav-link.active {
+    background-color: #0D5C85; /* Blue for the active state */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Donate Button Styling */
+.btn-primary {
+    background-color: #6DA542; /* Green color for the button */
+    border-color: #6DA542;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4D8032; /* Darker green on hover */
+    border-color: #4D8032;
+}
+
+/* Other Styling (Optional) */
+body {
+    background-color: white; /* White background for the overall site */
+    color: #0D5C85;          /* Use the blue color for text accents */
+}
