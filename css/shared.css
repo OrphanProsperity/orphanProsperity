@@ -1,32 +1,120 @@
-/* Navbar Link Hover Effect */
+:root {
+    --primary-blue: #0D5C85;
+    --primary-green: #6DA542;
+    --dark-green: #4D8032;
+    --light-gray: #f8f9fa;
+    --dark-gray: #6c757d;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-blue);
+    background-color: var(--white);
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand img {
+    border-radius: var(--border-radius);
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    margin: 0 0.3rem;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    color: var(--primary-blue) !important;
+}
+
 .navbar-nav .nav-link:hover {
-    background-color: #0D5C85; /* Blue color for hover */
-    color: white;             /* White text on hover */
-    border-radius: 5px;       /* Rounded edges for a smoother look */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    background: var(--primary-blue);
+    color: var(--white) !important;
+    transform: scale(1.05);
 }
 
-/* Active Link Styling (Optional) */
 .navbar-nav .nav-link.active {
-    background-color: #0D5C85; /* Blue for the active state */
-    color: white;
-    border-radius: 5px;
+    background: var(--primary-blue);
+    color: var(--white) !important;
+    box-shadow: 0 2px 10px rgba(13, 92, 133, 0.3);
 }
 
-/* Donate Button Styling */
 .btn-primary {
-    background-color: #6DA542; /* Green color for the button */
-    border-color: #6DA542;
-    color: white;
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 .btn-primary:hover {
-    background-color: #4D8032; /* Darker green on hover */
-    border-color: #4D8032;
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Other Styling (Optional) */
-body {
-    background-color: white; /* White background for the overall site */
-    color: #0D5C85;          /* Use the blue color for text accents */
+.section-title {
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile Navigation */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin: 0.25rem 0;
+        text-align: center;
+    }
+    
+    .navbar-brand img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-primary {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
 }
