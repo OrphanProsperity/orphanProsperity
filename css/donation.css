@@ -1,17 +1,60 @@
+.hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--light-gray), #e9ecef);
+}
+
+.donation-options-section {
+    padding: 5rem 0;
+}
+
+.donation-card {
+    background: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    height: 100%;
+}
+
+.donation-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.donation-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.donation-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.donation-card:hover .donation-amount {
+    transform: scale(1.1);
+    color: var(--primary-blue);
+}
+
 .donation-section {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    padding: 3rem 0;
 }
 
 iframe {
-    max-width: 500px; /* Matches Donorbox's provided max width */
-    min-width: 250px; /* Ensures visibility on smaller screens */
-    height: 900px; /* Matches Donorbox's recommended height */
+    max-width: 500px;
+    min-width: 250px;
+    height: 900px;
     border: none;
 }
 
-/* Optional: Add some space around the iframe */
 .donation-section iframe {
     margin: 0 auto;
     display: block;

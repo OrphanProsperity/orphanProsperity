@@ -96,6 +96,12 @@ body {
     transform: translateY(-5px);
 }
 
+footer {
+    background: linear-gradient(135deg, var(--primary-blue), #0a4a6b) !important;
+    color: var(--white);
+    padding: 2rem 0;
+}
+
 /* Mobile Navigation */
 @media (max-width: 991px) {
     .navbar-nav .nav-link {

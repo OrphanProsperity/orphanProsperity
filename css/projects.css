@@ -1,0 +1,38 @@
+.hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--light-gray), #e9ecef);
+}
+
+.projects-section {
+    padding: 5rem 0;
+}
+
+.project-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.project-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    transition: transform 0.3s ease;
+    border-radius: var(--border-radius);
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}

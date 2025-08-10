@@ -1,5 +1,5 @@
 .hero-section {
-    background: url('../assets/IMG_5036.JPG') center center/cover no-repeat;
+    background: url('../assets/WhatsApp Image 2025-08-04 at 4,32,58 AM-Picsart-AiImageEnhancer-edited.jpeg') center center/cover no-repeat;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -29,6 +29,7 @@
 
 .hero-content h1 {
     font-weight: 700;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-bottom: 1.5rem;
     animation: slideInDown 1s ease-out 0.3s both;

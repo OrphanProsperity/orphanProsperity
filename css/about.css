@@ -3,11 +3,11 @@
     background: linear-gradient(135deg, var(--light-gray), #e9ecef);
 }
 
-.sponsorship-details-section {
+.story-section {
     padding: 5rem 0;
 }
 
-.sponsorship-card {
+.story-card {
     background: var(--white);
     padding: 2rem;
     border-radius: var(--border-radius);
@@ -18,90 +18,61 @@
     transform: translateX(-30px);
 }
 
-.sponsorship-card.animate {
+.story-card.animate {
     opacity: 1;
     transform: translateX(0);
 }
 
-.sponsorship-card:hover {
+.story-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.sponsorship-details-section img {
+.story-section img {
     transition: transform 0.3s ease;
     opacity: 0;
     transform: translateX(30px);
 }
 
-.sponsorship-details-section img.animate {
+.story-section img.animate {
     opacity: 1;
     transform: translateX(0);
 }
 
-.sponsorship-details-section img:hover {
+.story-section img:hover {
     transform: scale(1.05);
 }
 
-.testimonials-section {
+.team-section {
     background: linear-gradient(135deg, var(--light-gray), #e9ecef);
     padding: 5rem 0;
 }
 
-.testimonial-card {
+.team-card {
     background: var(--white);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    text-align: center;
     transition: all 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
 }
 
-.testimonial-card.animate {
+.team-card.animate {
     opacity: 1;
     transform: translateY(0);
 }
 
-.testimonial-card:hover {
+.team-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.quote-icon {
-    font-size: 4rem;
-    color: var(--primary-green);
-    line-height: 1;
-    margin-bottom: 1rem;
-    font-family: serif;
+.team-card img {
+    transition: transform 0.3s ease;
 }
 
-.testimonial-text {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--dark-gray);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.testimonial-author {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.testimonial-author strong {
-    color: var(--primary-blue);
-    font-size: 1.1rem;
-    margin-bottom: 0.25rem;
-}
-
-.author-title {
-    color: var(--primary-green);
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.blockquote-footer {
-    margin-top: 0rem;
+.team-card:hover img {
+    transform: scale(1.1);
 }
