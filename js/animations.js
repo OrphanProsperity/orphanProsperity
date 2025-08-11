@@ -53,37 +53,37 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Cards with staggered delays
     impactCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
     
     teamCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
     
     projectCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
     
     achievementCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
     
     testimonialCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
     
     donationCards.forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.2}s`;
+        card.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
     
     galleryItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.1}s`;
+        item.style.transitionDelay = `${index * 0.05}s`;
         observer.observe(item);
     });
 });
