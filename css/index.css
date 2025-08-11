@@ -1,6 +1,8 @@
 .hero-section {
     background: url('../assets/WhatsApp Image 2025-08-04 at 4,32,58 AM-Picsart-AiImageEnhancer-edited.jpeg') center center/cover no-repeat;
     height: 80vh;
+    max-height: 800px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,6 +10,13 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+@media (min-width: 1920px) {
+    .hero-section {
+        background-size: contain;
+        background-color: #ffffff;
+    }
 }
 
 .hero-section::before {
